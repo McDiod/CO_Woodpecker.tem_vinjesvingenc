@@ -18,8 +18,8 @@
 */
 
 
-loadoutFactionBlu = "";
-loadoutFactionOpf = "";
+loadoutFactionBlu = "pmc";
+loadoutFactionOpf = "prepper";
 loadoutFactionInd = "";
 
 // Achtung: grad-factions enthält derzeit keine Loadouts, die für Zivilisten funktionieren
