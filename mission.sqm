@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1693;
+		nextID=1694;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=302;
+		nextID=306;
 	};
 	class Camera
 	{
-		pos[]={1319.3633,171.14754,5254.1948};
-		dir[]={-0.79844266,-0.4052839,0.44524643};
-		up[]={-0.35396916,0.91418946,0.1973885};
-		aside[]={0.48703825,4.25498e-008,0.87338543};
+		pos[]={1288.4884,164.41187,5274.1543};
+		dir[]={-0.79846007,-0.45247826,0.39716995};
+		up[]={-0.40517867,0.89174348,0.20154373};
+		aside[]={0.44536901,-6.0116872e-007,0.89535469};
 	};
 };
 binarizationWanted=0;
@@ -3298,7 +3298,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=58;
+		items=59;
 		class Item0
 		{
 			dataType="Layer";
@@ -7912,6 +7912,21 @@ class Mission
 			};
 			id=1692;
 			type="EmptyDetector";
+		};
+		class Item58
+		{
+			dataType="Trigger";
+			position[]={1198.113,128.74001,5320.8462};
+			angle=2.196619;
+			class Attributes
+			{
+				name="area_fob_abo";
+				sizeA=60;
+				sizeB=60;
+				isRectangle=1;
+			};
+			id=1693;
+			type="EmptyDetectorAreaR50";
 		};
 	};
 	class Connections
