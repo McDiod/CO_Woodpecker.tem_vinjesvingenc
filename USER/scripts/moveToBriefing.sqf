@@ -54,6 +54,7 @@ if (_positionID < 2) then {
     _dir = _position getDir _ptlPosition;
 };
 
+// fireteams abgehockt
 private _anim = ["AmovPknlMstpSlowWrflDnon","AmovPercMstpSlowWrflDnon"] select (typeOf _unit == "B_Soldier_SL_F" || (typeOf _unit == "B_medic_F" && rankID _unit > 1));
 
 _unit allowDamage false;
