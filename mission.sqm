@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1692;
+		nextID=1693;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=290;
+		nextID=302;
 	};
 	class Camera
 	{
-		pos[]={1199.8108,216.48912,5190.1523};
-		dir[]={0.37759304,-0.54711717,0.74706602};
-		up[]={0.24680354,0.83704978,0.48829943};
-		aside[]={0.89248931,-7.0373062e-008,-0.45109424};
+		pos[]={1319.3633,171.14754,5254.1948};
+		dir[]={-0.79844266,-0.4052839,0.44524643};
+		up[]={-0.35396916,0.91418946,0.1973885};
+		aside[]={0.48703825,4.25498e-008,0.87338543};
 	};
 };
 binarizationWanted=0;
@@ -3288,17 +3288,17 @@ class Mission
 		lightningsForced=1;
 		wavesForced=1;
 		windForced=1;
-		year=2035;
-		month=7;
-		day=6;
-		hour=12;
-		minute=0;
+		year=2020;
+		month=6;
+		day=26;
+		hour=6;
+		minute=11;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
 	class Entities
 	{
-		items=57;
+		items=58;
 		class Item0
 		{
 			dataType="Layer";
@@ -7327,13 +7327,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6741.1895,352.09543,6279.7334};
+						position[]={6741.189,352.09543,6279.7339};
 						angles[]={0,4.4649014,0};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
+						init="call{this allowDamage false}";
 						name="introheli1D";
 					};
 					id=1637;
@@ -7387,16 +7388,59 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6741.1895,352.09543,6279.7334};
+						position[]={6741.189,352.09543,6279.7339};
 						angles[]={0,4.4649014,0};
 					};
 					side="West";
 					class Attributes
 					{
+						init="call{this allowDamage false}";
 					};
 					id=1638;
 					type="rhsusf_army_ucp_helipilot";
 					atlOffset=45.023987;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -7486,34 +7530,120 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6370.0967,353.1138,6095.0405};
+						position[]={6370.0972,353.11365,6095.041};
 						angles[]={0,4.4649014,0};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
+						init="call{this allowDamage false}";
 						name="introheli2D";
 					};
 					id=1677;
 					type="rhsusf_army_ucp_helipilot";
-					atlOffset=44.975067;
+					atlOffset=44.974976;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6370.0967,353.1138,6095.0405};
+						position[]={6370.0972,353.11365,6095.041};
 						angles[]={0,4.4649014,0};
 					};
 					side="West";
 					class Attributes
 					{
+						init="call{this allowDamage false}";
 					};
 					id=1678;
 					type="rhsusf_army_ucp_helipilot";
-					atlOffset=44.975067;
+					atlOffset=44.974976;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -7762,11 +7892,26 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={6568.7324,307.07001,6143.3291};
+				position[]={6568.7319,307.07001,6143.3291};
 			};
 			init="call{{_x limitSpeed 100} forEach synchronizedObjects this}";
 			id=1691;
 			type="Logic";
+		};
+		class Item57
+		{
+			dataType="Trigger";
+			position[]={1255.854,163.39558,5582.1602};
+			class Attributes
+			{
+				condition="call{{_x in introheli1 || _x in introheli2} count playableUnits == 0}";
+				onActivation="call{missionNamespace setVariable [""INTROHELIS_LANDED"",true,true]}";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=1692;
+			type="EmptyDetector";
 		};
 	};
 	class Connections
