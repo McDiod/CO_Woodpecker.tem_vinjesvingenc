@@ -64,7 +64,7 @@ class prepper {
 		};
         vest[] = 
 		{
-			"";
+			""
 		};
         backpack = "";
         headgear[] = 
@@ -115,7 +115,7 @@ class prepper {
 		};
         primaryWeaponMagazine[] = 
 		{
-			"rhs_30Rnd_545x39_7N10_2mag_AK"
+			"rhs_30Rnd_545x39_7N10_AK"
 		};
         primaryWeaponMuzzle = "";
         primaryWeaponPointer = "";
@@ -186,7 +186,7 @@ class prepper {
 			"G_WirelessEarpiece_F",
 			
 			"",
-			"G_Bandanna_aviator"
+			"G_Bandanna_aviator",
 			"",
 			"G_Bandanna_oli",
 			"",
@@ -203,13 +203,7 @@ class prepper {
                 LIST_4("ACE_packingBandage"),
                 LIST_4("ACE_elasticBandage"),
                 LIST_4("ACE_quikclot"),
-                LIST_4("ACE_tourniquet"),
-                LIST_2("ACE_morphine"),
-                LIST_2("ACE_epinephrine")
-            };
-            addItemsToVest[] = {
-                LIST_2("SmokeShell"),
-                LIST_10("rhs_mag_30Rnd_556x45_M855_PMAG")
+				LIST_3("rhs_30Rnd_545x39_7N10_AK")
             };
         };
 		
@@ -225,7 +219,7 @@ class prepper {
 				"rhs_weap_m4a1_blockII_KAC_wd",
 				"rhs_weap_m4a1_blockII_wd"
 			};
-			
+			primaryWeaponMagazine = "rhs_mag_30Rnd_556x45_M855_PMAG";
 			primaryWeaponMuzzle[] =
 			{
 				"",
@@ -234,6 +228,16 @@ class prepper {
 				"muzzle_snds_m_khk_f",
 				""
 			};
+			primaryWeaponOptics[] =
+			{
+				"",
+				"rhsusf_acc_eotech_552_wd",
+				"rhsusf_acc_t1_high",
+				"rhsusf_acc_t1_low",
+				"rhsusf_acc_mrds"
+			};
+			
+			
 			
 			uniform[] = 
 			{
@@ -256,22 +260,28 @@ class prepper {
 				"rhssaf_veil_Green",
 				"Mask_M40_OD"
 			};
-			
+			addItemsToUniform[] = {
+                LIST_2("ACE_packingBandage"),
+                LIST_2("ACE_elasticBandage"),
+                LIST_2("ACE_quikclot"),
+                LIST_2("ACE_tourniquet"),
+                LIST_1("ACE_morphine"),
+                LIST_1("ACE_epinephrine")
+            };
             addItemsToVest[] = {
-                LIST_2("HandGrenade"),
                 LIST_2("SmokeShell"),
-                LIST_7("rhs_mag_30Rnd_556x45_M855_PMAG"),
-                LIST_2("SmokeShellRed"),
-                LIST_2("SmokeShellGreen"),
-                LIST_2("SmokeShellBlue")
+                LIST_3("rhs_mag_30Rnd_556x45_M855_PMAG"),
+                LIST_1("SmokeShellRed"),
+                LIST_1("SmokeShellGreen"),
             };
         };
 		
 		//Squad Leader
-        class Soldier_SL_F: Soldier_TL_F_F {
+        class Soldier_SL_F: Soldier_TL_F {
 			handgunWeapon = "rhsusf_weap_m1911a1";
 			handgunWeaponMagazine = "rhsusf_mag_7x45acp_MHP";
-			
+			headgear = "H_Beret_EAF_01_F";
+			goggles = "";
 			uniform[] = 
 			{
 				"U_I_E_Uniform_01_sweater_F",
@@ -290,6 +300,7 @@ class prepper {
                 LIST_2("SmokeShellOrange"),
                 LIST_2("SmokeShellPurple"),
                 LIST_2("SmokeShellRed"),
+				LIST_1("HandGrenade"),
                 LIST_2("SmokeShell")
             };
         };

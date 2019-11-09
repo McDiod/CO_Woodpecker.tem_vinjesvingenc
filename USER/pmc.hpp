@@ -48,7 +48,6 @@ class pmc {
 			"V_PlateCarrier2_rgr_noflag_F",
 			"V_CarrierRigKBT_01_heavy_Olive_F",
 			"V_CarrierRigKBT_01_light_Olive_F",
-			"V_CarrierRigKBT_01_Olive_F",
 		};
         backpack = "";
         headgear[] = 
@@ -113,7 +112,10 @@ class pmc {
 			"fhq_optic_ac11704",
 			"fhq_optic_ac12136"
 			};
-		primaryWeaponUnderbarrel = "rhsusf_acc_grip3";
+		primaryWeaponUnderbarrel[] = 
+		{
+			""
+		};
 		primaryWeaponUnderbarrelMagazine = "";
         secondaryWeapon = "";
         secondaryWeaponMagazine = "";
@@ -151,10 +153,9 @@ class pmc {
                 LIST_2("ACE_epinephrine")
             };
             addItemsToVest[] = {
-                LIST_2("HandGrenade"),
                 LIST_2("SmokeShell"),
                 LIST_1("16Rnd_9x21_Mag"),
-                LIST_10("rhs_mag_30Rnd_556x45_M855_PMAG")
+                LIST_9("rhs_mag_30Rnd_556x45_M855_PMAG")
             };
         };
 
@@ -190,13 +191,24 @@ class pmc {
 
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
-			vest = "V_PlateCarrier1_blk";
             backpack[] = 
 			{
 				"ga_kitbag_black",
 				"B_RadioBag_01_black_F",
 				"B_RadioBag_01_wdl_F"
 			};
+			
+			vest[] = 
+			{
+			"V_PlateCarrier1_blk",
+			"V_PlateCarrier2_blk",
+			"V_PlateCarrier1_rgr_noflag_F",
+			"V_PlateCarrier2_rgr_noflag_F",
+			"V_CarrierRigKBT_01_heavy_Olive_F",
+			"V_CarrierRigKBT_01_light_Olive_F",
+			"V_CarrierRigKBT_01_Olive_F",
+			};
+			
             addItemsToBackpack[] = {
                 LIST_2("SmokeShellBlue"),
                 LIST_2("SmokeShellGreen"),
@@ -209,8 +221,8 @@ class pmc {
 
         //Team Leader
         class Soldier_TL_F: Soldier_F {
-            addItemsToVest[] = {
-                LIST_2("HandGrenade"),
+            addItemsToVest[] = 
+			{
                 LIST_2("SmokeShell"),
                 LIST_1("16Rnd_9x21_Mag"),
                 LIST_7("rhs_mag_30Rnd_556x45_M855_PMAG"),
