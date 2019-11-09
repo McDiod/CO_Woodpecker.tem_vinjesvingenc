@@ -123,7 +123,7 @@ class Loadouts {
     baseDelay = 1;
     handleRadios = 1;
     resetLoadout = 0;
-    customGear = "missionNamespace getVariable ['FOBCOMPLETE',false] && ACE_player inArea area_fob_abo";
+    customGear = "missionNamespace getVariable ['INTRO2COMPLETE',false] && ACE_player inArea area_fob_abo";
 
     class Faction {
         #include "node_modules\grad-factions\loadouts.hpp"
