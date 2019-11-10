@@ -19,7 +19,7 @@ params [["_obj",objNull]];
     {},
     [],
     10,
-    0,
+    999,
     true,
     false
 ] call BIS_fnc_holdActionAdd;

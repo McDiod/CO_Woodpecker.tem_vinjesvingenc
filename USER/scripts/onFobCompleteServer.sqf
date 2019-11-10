@@ -8,7 +8,8 @@ missionNamespace setVariable ["SWITCHVEHICLES",true,true];
 
 sleep 8;
 
-skipTime (21.5 - daytime + 24 ) % 24;
+skipTime (22 - daytime + 24 ) % 24;
+0 setFog 0.3;
 
 sleep 18;
 
