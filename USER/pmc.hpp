@@ -26,8 +26,7 @@
 
 class pmc {
     class AllUnits {
-        uniform[] = 
-		{
+        uniform[] = {
 			"U_B_CombatUniform_mcam_tshirt",
 			"U_B_CTRG_2",
 			"U_BG_Guerilla2_3",
@@ -40,8 +39,7 @@ class pmc {
 			"SMM_Uniform_BW_FT_TS",
 			"SMM_Uniform_BW_MC_TS"
 		};
-        vest[] = 
-		{
+        vest[] = {
 			"V_PlateCarrier1_blk",
 			"V_PlateCarrier2_blk",
 			"V_PlateCarrier1_rgr_noflag_F",
@@ -50,8 +48,7 @@ class pmc {
 			"V_CarrierRigKBT_01_light_Olive_F",
 		};
         backpack = "";
-        headgear[] = 
-		{
+        headgear[] = {
 			"H_Cap_blk",
 			"H_HelmetB",
 			"H_HelmetB_black",
@@ -67,8 +64,7 @@ class pmc {
 			"H_Bandanna_sgg",
 			"H_PASGT_basic_black_F"
 		};
-        primaryWeapon[] = 
-		{
+        primaryWeapon[] = {
 			"rhs_weap_hk416d10",
 			"rhs_weap_hk416d10_LMT_wd",
 			"rhs_weap_hk416d145",
@@ -85,21 +81,17 @@ class pmc {
 			"rhs_weap_mk18",
 			"rhs_weap_mk18_KAC_wd"
 		};
-        primaryWeaponMagazine[] = 
-		{
+        primaryWeaponMagazine[] = {
 			"rhs_mag_30Rnd_556x45_M855_PMAG"
 		};
         primaryWeaponMuzzle = SUPPRESSORITEM;
-        primaryWeaponPointer[] = 
-		{
-			"rhsusf_acc_m952v", 
-			"rhsusf_acc_wmx_bk", 
-			"rhsusf_acc_anpeq15_bk_light", 
+        primaryWeaponPointer[] = {
+			"rhsusf_acc_m952v",
+			"rhsusf_acc_wmx_bk",
+			"rhsusf_acc_anpeq15_bk_light",
 			"rhsusf_acc_anpeq15_light"
 		};
-        primaryWeaponOptics[] =
-		{
-			"rhsusf_acc_m2a1",
+        primaryWeaponOptics[] = {
 			"rhsusf_acc_eotech_552",
 			"rhsusf_acc_eotech_552_wd",
 			"rhsusf_acc_compm4",
@@ -111,16 +103,14 @@ class pmc {
 			"optic_holosight_lush_f",
 			"fhq_optic_ac11704",
 			"fhq_optic_ac12136"
-			};
-		primaryWeaponUnderbarrel[] = 
-		{
+		};
+		primaryWeaponUnderbarrel[] = {
 			""
 		};
 		primaryWeaponUnderbarrelMagazine = "";
         secondaryWeapon = "";
         secondaryWeaponMagazine = "";
-        handgunWeapon[] = 
-		{
+        handgunWeapon[] = {
 			"hgun_Rook40_F",
 			"hgun_P07_F",
 			"hgun_P07_khk_F"
@@ -132,7 +122,7 @@ class pmc {
         compass = "ItemCompass";
         watch = "ACE_Altimeter";
         gps = "ItemGPS";
-        radio = "tfar_anprc152";
+        radio = "";
         nvgoggles = NVITEM;
     };
     class Type {
@@ -155,14 +145,15 @@ class pmc {
             addItemsToVest[] = {
                 LIST_2("SmokeShell"),
                 LIST_1("16Rnd_9x21_Mag"),
-                LIST_9("rhs_mag_30Rnd_556x45_M855_PMAG")
+                LIST_9("rhs_mag_30Rnd_556x45_M855_PMAG"),
+                LIST_1("ACRE_PRC343")
             };
         };
 
         //Combat Life Saver
         class medic_F: Soldier_F {
 			vest = "V_TacVestIR_blk";
-            backpack[] = 
+            backpack[] =
 			{
 				"ga_kitbag_black_medic",
 				"B_Kitbag_sgg",
@@ -181,6 +172,9 @@ class pmc {
                 };
                 class SERGEANT {
                     GRAD_FACTIONS_MEDICITEMS_PT
+                    addItemsToVest[] = {
+                        LIST_1("ACRE_PRC152")
+                    };
                 };
                 class LIEUTENANT: SERGEANT {};
                 class CAPTAIN: SERGEANT {};
@@ -191,24 +185,22 @@ class pmc {
 
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
-            backpack[] = 
-			{
+            backpack[] = {
 				"ga_kitbag_black",
 				"B_RadioBag_01_black_F",
 				"B_RadioBag_01_wdl_F"
 			};
-			
-			vest[] = 
-			{
-			"V_PlateCarrier1_blk",
-			"V_PlateCarrier2_blk",
-			"V_PlateCarrier1_rgr_noflag_F",
-			"V_PlateCarrier2_rgr_noflag_F",
-			"V_CarrierRigKBT_01_heavy_Olive_F",
-			"V_CarrierRigKBT_01_light_Olive_F",
-			"V_CarrierRigKBT_01_Olive_F",
+
+			vest[] = {
+    			"V_PlateCarrier1_blk",
+    			"V_PlateCarrier2_blk",
+    			"V_PlateCarrier1_rgr_noflag_F",
+    			"V_PlateCarrier2_rgr_noflag_F",
+    			"V_CarrierRigKBT_01_heavy_Olive_F",
+    			"V_CarrierRigKBT_01_light_Olive_F",
+    			"V_CarrierRigKBT_01_Olive_F"
 			};
-			
+
             addItemsToBackpack[] = {
                 LIST_2("SmokeShellBlue"),
                 LIST_2("SmokeShellGreen"),
@@ -217,11 +209,24 @@ class pmc {
                 LIST_2("SmokeShellRed"),
                 LIST_2("SmokeShell")
             };
+
+            class Rank {
+                class LIEUTENANT {
+                    addItemsToVest[] = {
+                        LIST_2("ACRE_PRC152")
+                    };
+                };
+                class CAPTAIN {
+                    addItemsToVest[] = {
+                        LIST_1("ACRE_PRC152")
+                    };
+                };
+            };
         };
 
         //Team Leader
         class Soldier_TL_F: Soldier_F {
-            addItemsToVest[] = 
+            addItemsToVest[] =
 			{
                 LIST_2("SmokeShell"),
                 LIST_1("16Rnd_9x21_Mag"),
@@ -229,7 +234,8 @@ class pmc {
                 LIST_2("SmokeShellRed"),
                 LIST_2("SmokeShellGreen"),
                 LIST_2("SmokeShellBlue"),
-
+                LIST_1("ACRE_PRC343"),
+                LIST_1("ACRE_PRC152")
             };
         };
 
