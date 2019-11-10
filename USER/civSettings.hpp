@@ -6,8 +6,8 @@
 autoInit = 0;
 enableCivs = 0;
 
-maxCivsOnFoot = 40;
-maxCivsResidents = 30;
+maxCivsOnFoot = 120;
+maxCivsResidents = 60;
 maxCivsInVehicles = 10;
 spawnDistancesOnFoot[] = {500,3000};
 spawnDistancesInVehicles[] = {1000,4500};
