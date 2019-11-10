@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1888;
+		nextID=1892;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=384;
+		nextID=390;
 	};
 	class Camera
 	{
-		pos[]={1300.0975,176.93129,5275.3374};
-		dir[]={-0.79440308,-0.51400584,0.3236585};
-		up[]={-0.47602266,0.85778052,0.19394235};
-		aside[]={0.37731501,-1.6344711e-007,0.92610162};
+		pos[]={1302.645,179.77788,5260.4136};
+		dir[]={-0.76121062,-0.47448581,0.44219202};
+		up[]={-0.41033694,0.88023609,0.23836605};
+		aside[]={0.50233197,-2.8766226e-007,0.86473763};
 	};
 };
 binarizationWanted=0;
@@ -80,13 +80,15 @@ addons[]=
 	"ace_cargo",
 	"A3_Supplies_F_Heli_Fuel",
 	"A3_Props_F_Exp_Commercial_Market",
+	"rhsusf_c_statics",
+	"A3_Structures_F_Exp_Military_Fortifications",
 	"acre_api"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=33;
+		items=35;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -312,6 +314,20 @@ class AddonsMetaData
 			url="https://www.arma3.com";
 		};
 		class Item32
+		{
+			className="rhsusf_c_statics";
+			name="RHSUSF Static Weapons";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item33
+		{
+			className="A3_Structures_F_Exp";
+			name="Arma 3 Apex - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item34
 		{
 			className="acre_api";
 			name="ACRE2 - API";
@@ -8109,7 +8125,7 @@ class Mission
 			name="FOB";
 			class Entities
 			{
-				items=82;
+				items=86;
 				class Item0
 				{
 					dataType="Object";
@@ -10483,9 +10499,73 @@ class Mission
 					id=1881;
 					type="EmptyDetector";
 				};
+				class Item82
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1252.0543,130.29536,5294.6953};
+						angles[]={6.1826949,2.1924562,6.2241564};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1891;
+					type="RHS_M2StaticMG_USMC_WD";
+				};
+				class Item83
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1253.0914,129.1427,5298.8438};
+						angles[]={-0,3.6989479,6.2798738};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1890;
+					type="Land_BagFence_01_end_green_F";
+				};
+				class Item84
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1253.4066,128.8884,5294.1567};
+						angles[]={6.1826949,2.1489682,6.2241564};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1889;
+					type="Land_BagFence_01_long_green_F";
+				};
+				class Item85
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1245.1812,129.15248,5289.188};
+						angles[]={-0,4.7689009,6.256525};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1888;
+					type="Land_BagFence_01_round_green_F";
+				};
 			};
 			id=1882;
-			atlOffset=2.9442902;
+			atlOffset=-0.23756409;
 		};
 		class Item14
 		{
@@ -10716,11 +10796,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=116;
+			nextID=124;
 		};
 		class Links
 		{
-			items=116;
+			items=124;
 			class Item0
 			{
 				linkID=0;
@@ -11875,6 +11955,86 @@ class Mission
 			{
 				linkID=115;
 				item0=1869;
+				item1=1881;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item116
+			{
+				linkID=116;
+				item0=1889;
+				item1=1870;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item117
+			{
+				linkID=117;
+				item0=1890;
+				item1=1870;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item118
+			{
+				linkID=118;
+				item0=1891;
+				item1=1870;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item119
+			{
+				linkID=119;
+				item0=1888;
+				item1=1870;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item120
+			{
+				linkID=120;
+				item0=1889;
+				item1=1881;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item121
+			{
+				linkID=121;
+				item0=1890;
+				item1=1881;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item122
+			{
+				linkID=122;
+				item0=1891;
+				item1=1881;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item123
+			{
+				linkID=123;
+				item0=1888;
 				item1=1881;
 				class CustomData
 				{
