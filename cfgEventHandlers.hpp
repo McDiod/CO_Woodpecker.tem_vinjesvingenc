@@ -4,6 +4,11 @@ class Extended_Init_EventHandlers  {
             init = "_this call grad_events_fnc_addCuratorEHs";
         };
     };
+    class CAManBase {
+        class woodpecker_customFaces {
+            init = "_this call grad_events_fnc_onManSpawn";
+        };
+    };
 };
 
 class Extended_Local_EventHandlers {
