@@ -79,17 +79,21 @@ class pmc {
 			"rhs_weap_m4a1_blockII_KAC_wd",
 			"rhs_weap_m4a1_wd_mstock",
 			"rhs_weap_mk18",
-			"rhs_weap_mk18_KAC_wd"
+			"rhs_weap_mk18_KAC_wd",
+			"arifle_TRG20_F",
+			"arifle_Mk20_plain_F",
+			"arifle_Mk20_F",
+			"arifle_Mk20C_plain_F",
+			"arifle_Mk20C_F",
+			"arifle_TRG21_F"
 		};
         primaryWeaponMagazine[] = {
-			"rhs_mag_30Rnd_556x45_M855_PMAG"
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Pull"
 		};
         primaryWeaponMuzzle = SUPPRESSORITEM;
         primaryWeaponPointer[] = {
 			"rhsusf_acc_m952v",
-			"rhsusf_acc_wmx_bk",
-			"rhsusf_acc_anpeq15_bk_light",
-			"rhsusf_acc_anpeq15_light"
+			"rhsusf_acc_wmx_bk"
 		};
         primaryWeaponOptics[] = {
 			"rhsusf_acc_eotech_552",
@@ -145,7 +149,7 @@ class pmc {
             addItemsToVest[] = {
                 LIST_2("SmokeShell"),
                 LIST_1("16Rnd_9x21_Mag"),
-                LIST_9("rhs_mag_30Rnd_556x45_M855_PMAG"),
+                LIST_9("rhs_mag_30Rnd_556x45_M855_Stanag_Pull"),
                 LIST_1("ACRE_PRC343")
             };
         };
@@ -230,7 +234,7 @@ class pmc {
 			{
                 LIST_2("SmokeShell"),
                 LIST_1("16Rnd_9x21_Mag"),
-                LIST_7("rhs_mag_30Rnd_556x45_M855_PMAG"),
+                LIST_7("rhs_mag_30Rnd_556x45_M855_Stanag_Pull"),
                 LIST_2("SmokeShellRed"),
                 LIST_2("SmokeShellGreen"),
                 LIST_2("SmokeShellBlue"),
