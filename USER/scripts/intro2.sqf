@@ -10,6 +10,7 @@ private _fnc_move = {
 };
 
 if (!hasInterface) exitWith _fnc_move;
+if (playerSide != WEST) exitWith {};
 
 private _acreVolume = [] call acre_api_fnc_getGlobalVolume;
 [0] call acre_api_fnc_setGlobalVolume;
