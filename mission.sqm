@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2470;
+		nextID=2472;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=506;
+		nextID=522;
 	};
 	class Camera
 	{
-		pos[]={1135.2936,159.90576,5369.7422};
-		dir[]={0.67746693,-0.51219654,-0.52798736};
-		up[]={0.4040499,0.85882485,-0.3148976};
-		aside[]={-0.61473495,-2.0477455e-007,-0.78877592};
+		pos[]={2293.6978,8.7078352,3764.885};
+		dir[]={0.4867641,-0.32764196,-0.80977595};
+		up[]={0.16880265,0.94479716,-0.28081962};
+		aside[]={-0.85708725,-5.6205317e-007,-0.51520187};
 	};
 };
 binarizationWanted=0;
@@ -4196,7 +4196,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=78;
+		items=80;
 		class Item0
 		{
 			dataType="Layer";
@@ -25867,6 +25867,69 @@ class Mission
 			id=2469;
 			type="BloodPool_01_Medium_New_F";
 			atlOffset=7.6293945e-006;
+		};
+		class Item78
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2297.3215,7.3041458,3759.7942};
+				angles[]={0.029984757,1.0667802,0.013334315};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.24679263;
+				ammo=0;
+				lock="LOCKED";
+				fuel=0;
+				init="call{if (isServer) then {this setPilotLight true};}";
+				name="graffiticar";
+			};
+			id=2470;
+			type="B_GEN_Van_02_vehicle_F";
+			atlOffset=-5.2452087e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item79
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2296.1399,7.5905476,3760.333};
+				angles[]={6.1299577,2.6412764,6.194736};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{this setObjectTexture [0,""USER\data\graffiti.paa""]; if (isServer) then {[graffiticar,this] call BIS_fnc_attachToRelative};}";
+			};
+			id=2471;
+			type="Land_Graffiti_01_F";
+			atlOffset=1.9769998;
 		};
 	};
 	class Connections
