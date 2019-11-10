@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1921;
+		nextID=1926;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=440;
+		nextID=441;
 	};
 	class Camera
 	{
-		pos[]={3364.9636,140.45683,1837.0598};
-		dir[]={0.036032453,-0.55083925,0.83383954};
-		up[]={0.023781089,0.83460969,0.55032665};
-		aside[]={0.9990716,-1.4450052e-008,-0.04317246};
+		pos[]={3368.5293,140.76001,1846.9099};
+		dir[]={0,-0.70710695,0.70710671};
+		up[]={0,0.70710665,0.70710689};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -10515,7 +10515,7 @@ class Mission
 			name="Gasstation";
 			class Entities
 			{
-				items=21;
+				items=23;
 				class Item0
 				{
 					dataType="Logic";
@@ -11190,74 +11190,375 @@ class Mission
 					id=1918;
 					atlOffset=0.13800049;
 				};
+				class Item21
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={3368.5293,115.76,1871.9099};
+					};
+					areaSize[]={3,0,3};
+					flags=1;
+					id=1916;
+					type="ModuleHideTerrainObjects_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="#filter";
+							expression="_this setVariable [""#filter"",_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=15;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="#hideLocally";
+							expression="_this setVariable [""#hideLocally"",_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item22
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={3346.335,26.257935,2043.318};
+						angles[]={0.33964106,0,5.8799095};
+					};
+					id=1923;
+					type="ModuleTaskSetState_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleTaskSetState_F_ShowNotification";
+							expression="_this setVariable ['ShowNotification',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleTaskSetState_F_State";
+							expression="_this setVariable ['State',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="SUCCEEDED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			id=1893;
-			atlOffset=0.072151184;
+			atlOffset=-13.83667;
 		};
 		class Item6
 		{
-			dataType="Logic";
-			class PositionInfo
+			dataType="Layer";
+			name="Floten";
+			class Entities
 			{
-				position[]={3368.5293,115.76,1871.9099};
-			};
-			areaSize[]={3,0,3};
-			flags=1;
-			id=1916;
-			type="ModuleHideTerrainObjects_F";
-			class CustomAttributes
-			{
-				class Attribute0
+				items=2;
+				class Item0
 				{
-					property="#filter";
-					expression="_this setVariable [""#filter"",_value]";
-					class Value
+					dataType="Logic";
+					class PositionInfo
 					{
-						class data
+						position[]={4722.9741,332.2168,4319.478};
+					};
+					id=1921;
+					type="ModuleTaskCreate_F";
+					atlOffset=-3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
 						{
-							class type
+							property="ModuleTaskCreate_F_Destination";
+							expression="_this setVariable ['Destination',_value,true];";
+							class Value
 							{
-								type[]=
+								class data
 								{
-									"SCALAR"
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
 								};
 							};
-							value=15;
 						};
-					};
-				};
-				class Attribute1
-				{
-					property="#hideLocally";
-					expression="_this setVariable [""#hideLocally"",_value]";
-					class Value
-					{
-						class data
+						class Attribute1
 						{
-							class type
+							property="ModuleTaskCreate_F_Type";
+							expression="_this setVariable ['Type',_value,true];";
+							class Value
 							{
-								type[]=
+								class data
 								{
-									"BOOL"
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Default";
 								};
 							};
-							value=0;
 						};
+						class Attribute2
+						{
+							property="ModuleTaskCreate_F_ShowNotification";
+							expression="_this setVariable ['ShowNotification',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleTaskCreate_F_Marker";
+							expression="_this setVariable ['Marker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ModuleTaskCreate_F_Title";
+							expression="_this setVariable ['Title',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Floten";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ModuleTaskCreate_F_Description";
+							expression="_this setVariable ['Description',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Der Tankstellenbesitzer hat nicht überlebt. Er hat ""FLOT..."" an die Wand geschrieben. Wahrscheinlich meinte er damit das Dorf Floten? Ob die Verantwortlichen dort zu finden sind?";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ModuleTaskCreate_F_ID";
+							expression="_this setVariable ['ID',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ModuleTaskCreate_F_AlwaysVisible";
+							expression="_this setVariable ['AlwaysVisible',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ModuleTaskCreate_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=3;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="ModuleTaskCreate_F_State";
+							expression="_this setVariable ['State',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="CREATED";
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="ModuleTaskCreate_F_IDParent";
+							expression="_this setVariable ['IDParent',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=11;
 					};
 				};
-				nAttributes=2;
+				class Item1
+				{
+					dataType="Trigger";
+					position[]={4727.2231,276.9498,3873.7561};
+					class Attributes
+					{
+						condition="call{GRAFFITIFOUND}";
+						sizeA=0;
+						sizeB=0;
+					};
+					id=1922;
+					type="EmptyDetector";
+				};
 			};
+			id=1925;
+			atlOffset=-23.197662;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=124;
+			nextID=127;
 		};
 		class Links
 		{
-			items=124;
+			items=127;
 			class Item0
 			{
 				linkID=0;
@@ -12493,6 +12794,36 @@ class Mission
 				linkID=123;
 				item0=1888;
 				item1=1881;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item124
+			{
+				linkID=124;
+				item0=1922;
+				item1=1921;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item125
+			{
+				linkID=125;
+				item0=1923;
+				item1=1818;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item126
+			{
+				linkID=126;
+				item0=1923;
+				item1=1922;
 				class CustomData
 				{
 					type="Sync";
