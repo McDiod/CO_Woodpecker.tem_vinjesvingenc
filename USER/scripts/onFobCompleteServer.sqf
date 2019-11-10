@@ -10,6 +10,6 @@ sleep 8;
 
 skipTime (21.5 - daytime + 24 ) % 24;
 
-sleep 5;
+sleep 15;
 
 missionNamespace setVariable ["INTRO2COMPLETE",true,true];

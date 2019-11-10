@@ -2,6 +2,8 @@
 
 waitUntil {(missionNamespace getVariable ["CBA_missionTime",0]) > 0};
 
+if (!(player in introheli1) && !(player in introheli2)) exitWith {};
+
 INTROLAYER cutText ["","BLACK OUT",0.001];
 0.001 fadeSound 0;
 
