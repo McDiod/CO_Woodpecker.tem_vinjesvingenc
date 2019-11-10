@@ -108,9 +108,7 @@ class pmc {
 			"fhq_optic_ac11704",
 			"fhq_optic_ac12136"
 		};
-		primaryWeaponUnderbarrel[] = {
-			""
-		};
+		primaryWeaponUnderbarrel[] = {};
 		primaryWeaponUnderbarrelMagazine = "";
         secondaryWeapon = "";
         secondaryWeaponMagazine = "";
