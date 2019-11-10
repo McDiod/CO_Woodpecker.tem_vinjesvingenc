@@ -222,7 +222,7 @@ class pmc {
                 };
                 class CAPTAIN {
                     addItemsToVest[] = {
-                        LIST_1("ACRE_PRC152")
+                        LIST_2("ACRE_PRC152")
                     };
                 };
             };
