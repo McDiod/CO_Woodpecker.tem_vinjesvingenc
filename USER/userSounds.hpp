@@ -20,3 +20,9 @@ class distant_explosion {
     sound[]		= { "USER\data\distant_explosion.ogg", 1.00, 1};
     titles[] = {};
 };
+
+class synch_propaganda {
+    name = "synch_propaganda";
+    sound[]		= { "USER\data\Ancient_Men.ogg", 1.00, 1};
+    titles[] = {};
+};
