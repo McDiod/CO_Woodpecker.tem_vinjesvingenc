@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2465;
+		nextID=2470;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=482;
+		nextID=490;
 	};
 	class Camera
 	{
-		pos[]={1203.8527,191.3853,5342.5103};
-		dir[]={-0.34695116,-0.92531604,0.1538372};
-		up[]={-0.84590733,0.37903884,0.37507567};
-		aside[]={0.40537718,-3.255489e-006,0.91425812};
+		pos[]={3321.4128,146.7816,1845.3611};
+		dir[]={0.68519342,-0.60015768,0.41274655};
+		up[]={0.51409489,0.79987544,0.30968019};
+		aside[]={0.51600218,3.3061951e-008,-0.85660678};
 	};
 };
 binarizationWanted=0;
@@ -150,13 +150,14 @@ addons[]=
 	"A3_Structures_F_Mil_Shelters",
 	"A3_Structures_F_Heli_Items_Tools",
 	"A3_Props_F_Orange_Items_Tools",
-	"A3_Props_F_Enoch_Military_Supplies"
+	"A3_Props_F_Enoch_Military_Supplies",
+	"A3_Characters_F_Exp_Civil"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=70;
+		items=71;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -616,6 +617,13 @@ class AddonsMetaData
 			name="gm_objects_fortification";
 			author="Global Mobilization";
 			url="global-mobilization.com";
+		};
+		class Item70
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -4188,7 +4196,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=131;
+		items=134;
 		class Item0
 		{
 			dataType="Layer";
@@ -11170,7 +11178,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="call{this setObjectTexture [0,""USER\data\graffiti.paa""]; [this] execVM ""USER\scripts\addGraffitiAction.sqf""}";
+						init="call{this setObjectTexture [0,""USER\data\graffiti.paa""]; }";
 					};
 					id=1917;
 					type="Land_Graffiti_03_F";
@@ -11372,11 +11380,11 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="call{if (isServer) then {this disableAI ""ALL""; [this] spawn {waitUntil {(missionNamespace getVariable [""CBA_missionTime"",0]) > 60}; (_this select 0) switchMove ""Acts_ExecutionVictim_KillTerminal""; (_this select 0) setDamage 1}};}";
+								init="call{if (isServer) then {this disableAI ""ALL""; [this] spawn {waitUntil {(missionNamespace getVariable [""CBA_missionTime"",0]) > 60}; (_this select 0) switchMove ""Acts_ExecutionVictim_KillTerminal""; (_this select 0) setDamage 1}}; [this] execVM ""USER\scripts\addGraffitiAction.sqf""}";
 							};
 							id=1919;
 							type="C_man_p_fugitive_F";
-							atlOffset=0.13799286;
+							atlOffset=0.13800049;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -11425,7 +11433,7 @@ class Mission
 					{
 					};
 					id=1918;
-					atlOffset=0.13799286;
+					atlOffset=0.13800049;
 				};
 				class Item21
 				{
@@ -25119,7 +25127,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4748.4102,329.87518,4315.854};
-			angle=3.3055837;
+			angle=3.3055835;
 			class Attributes
 			{
 				sizeA=220;
@@ -25141,6 +25149,110 @@ class Mission
 			init="call{[this,35] call grad_civs_fnc_populateArea}";
 			id=2464;
 			type="Logic";
+		};
+		class Item131
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3358.408,115.76675,1869.255};
+						angles[]={0,4.038168,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						health=0;
+					};
+					id=2466;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2465;
+		};
+		class Item132
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3357.7671,115.77244,1869.1289};
+				angles[]={-0,0,6.2798738};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2468;
+			type="BloodSplatter_01_Small_New_F";
+		};
+		class Item133
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3357.8035,115.77541,1868.1346};
+				angles[]={0.0066682254,0,6.2765174};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2469;
+			type="BloodPool_01_Medium_New_F";
 		};
 	};
 	class Connections
