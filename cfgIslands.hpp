@@ -11,6 +11,12 @@ class CfgIslands {
 		isWoodland = true;
 	};
 
+    class tem_vinjesvingenc {
+		displayName = "Vinjesvingen";
+		type = "russian";
+		isWoodland = true;
+	};
+
 	class Chernarus {
 		displayName = "Chernarus";
 		type = "russian";
