@@ -1,5 +1,7 @@
 if (!hasInterface) exitWith {};
 
+private _gasStationPos = [3377.2,1870.9,-0.0528336];
+
 // narrow short smoke
 private _radius = 20;
 private _source = "#particlesource" createVehicleLocal _gasStationPos;
