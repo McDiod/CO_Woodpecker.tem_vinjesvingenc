@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=521;
 	class ItemIDProvider
 	{
 		nextID=2780;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=538;
+		nextID=546;
 	};
 	class Camera
 	{
-		pos[]={3850.7939,58.602547,1290.9004};
-		dir[]={-0.16372848,-0.77579111,0.60938388};
-		up[]={-0.20130077,0.630988,0.74922264};
-		aside[]={0.96575385,-2.1513551e-007,0.25947842};
+		pos[]={5083.8926,471.1969,4386.2817};
+		dir[]={-0.86959922,-0.46101308,-0.17704988};
+		up[]={-0.45176402,0.88738149,-0.091978371};
+		aside[]={-0.19951333,2.5855843e-007,0.97993422};
 	};
 };
 binarizationWanted=0;
@@ -13691,10 +13691,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4694.8364,332.70248,4390.0474};
-						angles[]={3.0492468,0.074945807,5.1942272};
+						position[]={4694.8364,330.97681,4390.0474};
+						angles[]={3.1416125,3.2165623,6.1540828};
 					};
 					side="Empty";
+					flags=4;
 					class Attributes
 					{
 						health=0.13425608;
@@ -13705,7 +13706,7 @@ class Mission
 					};
 					id=1965;
 					type="C_Offroad_01_comms_F";
-					atlOffset=0.7053833;
+					atlOffset=-1.0202942;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25732,11 +25733,11 @@ class Mission
 		class Item71
 		{
 			dataType="Trigger";
-			position[]={2711.6907,2.9662859,2497.9473};
-			angle=4.3384438;
+			position[]={2689.9675,4.1190591,2499.1912};
+			angle=2.700418;
 			class Attributes
 			{
-				sizeB=60;
+				sizeB=30;
 				isRectangle=1;
 			};
 			id=2461;
@@ -25750,7 +25751,7 @@ class Mission
 				position[]={2847.1179,4.4045715,2649.146};
 				angles[]={6.2465334,0,6.2765183};
 			};
-			init="call{[this,4] call grad_civs_fnc_populateArea}";
+			init="call{[this,2] call grad_civs_fnc_populateArea}";
 			id=2462;
 			type="Logic";
 		};
