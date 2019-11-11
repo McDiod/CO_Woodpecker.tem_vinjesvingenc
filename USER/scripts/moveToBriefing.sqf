@@ -5,8 +5,6 @@ if (!isNull objectParent _unit) then {
     _unit setVelocity [0,0,0];
 };
 
-[_unit] call grad_loadout_fnc_doLoadoutForUnit;
-
 private _allPositions = [
     [1171.62,5350.56,0.00143433],
     [1171.96,5351.69,0.00143433],
