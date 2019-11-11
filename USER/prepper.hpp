@@ -260,7 +260,10 @@ class prepper {
                 LIST_2("ACE_packingBandage"),
                 LIST_2("ACE_elasticBandage"),
                 LIST_2("ACE_quikclot"),
-				LIST_36("rhsgref_1Rnd_00Buck")
+				LIST_8("rhsgref_1Rnd_00Buck"),
+				LIST_8("rhsgref_1Rnd_00Buck"),
+				LIST_8("rhsgref_1Rnd_00Buck"),
+				LIST_8("rhsgref_1Rnd_00Buck")
             };
         };
 		
@@ -352,6 +355,7 @@ class prepper {
 			handgunWeapon = "rhsusf_weap_m1911a1";
 			handgunWeaponMagazine = "rhsusf_mag_7x45acp_MHP";
 			headgear = "H_Beret_EAF_01_F";
+			primaryWeaponMuzzle = "";
 			goggles = "";
 			uniform[] = 
 			{
