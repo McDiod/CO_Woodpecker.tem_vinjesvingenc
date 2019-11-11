@@ -25,7 +25,7 @@ sleep 2;
 sleep 8;
 [parseText "<t font='PuristaBold' align='center' size='1.5' valign='middle'>Die Sicherheitskräfte harren die Nacht aus, bis am folgenden Morgen ihre Ablöse kommt.</t>", TEXTPOS, [10,1], 6, 1, 0] spawn BIS_fnc_textTiles;
 sleep 8;
-[parseText "<t font='PuristaBold' align='center' size='1.5' valign='middle'>Über die nächsten zwei Wochen gelingen der Landespolizei 34 weitere Festnahmen.</t>", TEXTPOS, [10,1], 6, 1, 0] spawn BIS_fnc_textTiles;
+[parseText "<t font='PuristaBold' align='center' size='1.5' valign='middle'>Über die nächsten zwei Wochen gelingen der Landespolizei 16 weitere Festnahmen führender Mitglieder.</t>", TEXTPOS, [10,1], 6, 1, 0] spawn BIS_fnc_textTiles;
 sleep 14;
 
 ["end1",true,2] call BIS_fnc_endMission;
