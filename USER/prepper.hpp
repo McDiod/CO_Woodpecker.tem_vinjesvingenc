@@ -197,19 +197,90 @@ class prepper {
 		
     class Type {
         //Rifleman
-        class Soldier_F {
+        class Soldier_F 
+		{
+			
+			primaryWeapon[]=
+			{
+				"rhs_weap_m38",
+				"rhs_weap_m38_rail"
+			};
+			
+			primaryWeaponMagazine = "rhsgref_5Rnd_762x54_m38";
+			primaryWeaponOptics = "";
+			primaryWeaponMuzzle = "";
+			primaryWeaponPointer = "";
+			primaryWeaponUnderbarrel = "";
+			
             addItemsToUniform[] = {
-                LIST_2("ACE_CableTie"),
+                LIST_2("ACE_packingBandage"),
+                LIST_2("ACE_elasticBandage"),
+                LIST_2("ACE_quikclot"),
+				LIST_8("rhsgref_5Rnd_762x54_m38")
+            };
+        };
+		
+		class Soldier_lite_F 
+		{
+			
+			primaryWeapon[]=
+			{
+				"rhs_weap_m1garand_sa43"
+			};
+			
+			primaryWeaponMagazine = "rhsgref_8Rnd_762x63_M2B_M1rifle";
+			primaryWeaponOptics = "";
+			primaryWeaponMuzzle = "";
+			primaryWeaponPointer = "";
+			primaryWeaponUnderbarrel = "";
+			
+            addItemsToUniform[] = {
+                LIST_2("ACE_packingBandage"),
+                LIST_2("ACE_elasticBandage"),
+                LIST_2("ACE_quikclot"),
+				LIST_8("rhsgref_8Rnd_762x63_M2B_M1rifle")
+            };
+        };
+		
+		class engineer_F 
+		{
+			
+			primaryWeapon[]=
+			{
+				"rhs_weap_Izh18"
+			};
+			
+			primaryWeaponMagazine = "rhsgref_1Rnd_00Buck";
+			primaryWeaponOptics = "";
+			primaryWeaponMuzzle = "";
+			primaryWeaponPointer = "";
+			primaryWeaponUnderbarrel = "";
+			
+            addItemsToUniform[] = {
+                LIST_2("ACE_packingBandage"),
+                LIST_2("ACE_elasticBandage"),
+                LIST_2("ACE_quikclot"),
+				LIST_36("rhsgref_1Rnd_00Buck")
+            };
+        };
+		
+		
+		
+		class Soldier_AR_F
+		{
+			
+			addItemsToUniform[] = {
                 LIST_4("ACE_packingBandage"),
                 LIST_4("ACE_elasticBandage"),
                 LIST_4("ACE_quikclot"),
 				LIST_3("rhs_30Rnd_545x39_7N10_AK")
             };
-        };
-		
+			
+		};
 
         //Team Leader
-        class Soldier_TL_F: Soldier_F {
+        class Soldier_TL_F: Soldier_AR_F 
+		{
 			primaryWeapon[] = 
 			{
 				"rhs_weap_mk18_KAC_wd",

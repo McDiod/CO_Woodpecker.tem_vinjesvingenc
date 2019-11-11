@@ -135,8 +135,6 @@ class pmc {
                 LIST_1("ACE_DefusalKit"),
                 LIST_2("ACE_CableTie"),
                 LIST_1("ACE_Flashlight_MX991"),
-                LIST_1("ACE_key_lockpick"),
-
                 LIST_4("ACE_packingBandage"),
                 LIST_4("ACE_elasticBandage"),
                 LIST_4("ACE_quikclot"),
@@ -191,16 +189,6 @@ class pmc {
 				"ga_kitbag_black",
 				"B_RadioBag_01_black_F",
 				"B_RadioBag_01_wdl_F"
-			};
-
-			vest[] = {
-    			"V_PlateCarrier1_blk",
-    			"V_PlateCarrier2_blk",
-    			"V_PlateCarrier1_rgr_noflag_F",
-    			"V_PlateCarrier2_rgr_noflag_F",
-    			"V_CarrierRigKBT_01_heavy_Olive_F",
-    			"V_CarrierRigKBT_01_light_Olive_F",
-    			"V_CarrierRigKBT_01_Olive_F"
 			};
 
             addItemsToBackpack[] = {
